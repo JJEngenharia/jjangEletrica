@@ -1724,3 +1724,14 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+.small-carousel {
+  max-width: 500px;  /* Ajuste a largura conforme necessário */
+  max-height: 300px;  /* Ajuste a altura conforme necessário */
+  margin: 0 auto;  /* Centraliza o carrossel horizontalmente */
+}
+
+.small-carousel .swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

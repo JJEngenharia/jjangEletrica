@@ -829,7 +829,7 @@ section,
   border-radius: 50%;
   transition: all 0.3s;
   z-index: -1;
-}
+} 
 
 .services .service-item:after {
   content: "";
@@ -855,7 +855,7 @@ section,
   width: 56px;
   height: 56px;
   border-radius: 50%;
-}
+} 
 
 .services .service-item h4 {
   font-weight: 600;
@@ -873,26 +873,26 @@ section,
   font-size: 14px;
   margin: 10px 0 0 0;
 }
-
-.services .service-item:hover:before,
-.services .service-item:hover:after {
-  background: var(--accent-color);
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0px;
+.services .service-item ul {
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding-left: 0; /* Remove o recuo padrão */
 }
 
-.services .service-item:hover h4 a,
-.services .service-item:hover p {
-  color: var(--contrast-color);
+.services .service-item ul li {
+  margin-bottom: 5px; /* Adiciona um espaçamento entre os itens da lista */
 }
 
-.services .service-item:hover i {
-  background: var(--contrast-color);
-  color: var(--accent-color);
+.services .service-item ul li a {
+  color: var(--default-color); /* Altera a cor dos links para corresponder ao esquema de cores */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  transition: color 0.3s; /* Adiciona uma transição suave de cor */
 }
+
+.services .service-item ul li a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%); /* Altera a cor dos links ao passar o mouse */
+}
+
+
 
 /*--------------------------------------------------------------
 # Alt Services Section
